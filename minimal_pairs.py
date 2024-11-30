@@ -4,9 +4,9 @@ import unicodedata
 
 def get_char(word):
     word = unicodedata.normalize('NFC', word)
-    pastletter = word[0]
+    pastletter = ""
     for letter in word:
-        if unicodedata.combining(letter) or letter in ['ʰ', 'ː', '\u032A']:
+        if unicodedata.combining(letter) or letter in ['ʰ', 'ː', '\u032A'] or pastletter == "":
             pastletter += letter
         else:
             yield pastletter
