@@ -15,10 +15,12 @@ def get_char(word):
     yield None
 
 words = []
-for line in f.readlines():
+line = f.readline()
+while line:
     line = line.strip()
     if line != '':
         words.append(line)
+    line = f.readline()
 
 
 found = set()
