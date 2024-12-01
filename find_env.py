@@ -44,8 +44,6 @@ for word in words:
         else:
             env = word[i-1] + "_" + word[i+1]
         letter = word[i]
-        if letter == 't':
-            print(word)
         try:
             sound_env[letter].add(env)
         except:
