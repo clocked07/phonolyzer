@@ -1,3 +1,10 @@
+import sys
+import io
+
+# Set stdout to UTF-8 encoding
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+# makes it possible to redirect stdout to file using > operator in windows, as default encodign doesn't support all utf-8 characters
+
 f = open('files/ipa_words.txt', 'r', encoding='utf-8')
 wrf = open('files/minimal_pairs.txt', 'w', encoding='utf-8')
 import unicodedata

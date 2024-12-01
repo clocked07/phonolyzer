@@ -1,4 +1,12 @@
 #program to find environment in which all sounds in the dataset occur. used after extract_phonemes.py to prepare data for use in find_allophones.py
+
+import sys
+import io
+
+# Set stdout to UTF-8 encoding
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+# makes it possible to redirect stdout to file using > operator in windows, as default encodign doesn't support all utf-8 characters
+
 import unicodedata
 def get_char(word):
     word = unicodedata.normalize('NFC', word)
