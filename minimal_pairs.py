@@ -47,7 +47,7 @@ for i in range(len(words)):
                     if diffs > 1:
                         break
             if diffs <= 1 and (word1, word2) not in found:
-                print(f"{word1} {word2} {diffchars[0]} {diffchars[1]}")
+                print(f"{word1} & {word2} & {diffchars[0]} & {diffchars[1]} \\\\") #easy to copy into latex table
                 wrf.write(f"{word1} {word2} {diffchars[0]} {diffchars[1]}\n")
                 found.add((word1, word2))
 
