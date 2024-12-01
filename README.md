@@ -150,3 +150,8 @@ k       {'ũː', 't͡', 'ɔː', 's', 'ʒ', 'ɔ', 'õː', 'ʒʰ', 'ɛ', 'ẽː', 
 ## Notes
 
 - Combined sounds like t͡ʃ are treated as two seperate sounds, namely t͡ and ʃ.
+
+
+## License & Contributions
+
+All contributions are welcome. This code is licensed under the [BSD-3-Clause License](https://github.com/clocked07/phonolyzer/blob/trunk/LICENSE).
